@@ -1,0 +1,564 @@
+header {
+  /* Styles for the header section */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #d93954;
+  padding: 10px;
+}
+.logo {
+  float: left;
+}
+.sadmin {
+  float: right;
+  margin-right: 70px;
+}
+
+.icon {
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.icon:hover {
+  background-color:white;
+}
+
+.icon .active{
+  background-color: red;
+}
+.htitle h1{
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: #d93954;
+}
+
+/* upload sectioncss here */
+/* FileUpload.css */
+.dropzone {
+  width: 400px;
+  height: 20px;
+  border: 1px dashed #d93954;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone.active {
+  border-color: #4caf50;
+}
+
+/* Additional styling */
+.dropzone p {
+  margin: 0;
+}
+
+/* Style file input if needed */
+.dropzone input {
+  display: none;
+}
+
+.upload-section {
+  margin: 20px 0;
+  display: flex;
+}
+
+.fhead h2 {
+  font-size: 14px;
+  color: #404041;
+}
+
+/* Style the dropdown */
+.fdd {
+  padding: 10px;
+  width: 400px;
+  margin-left: 10px;
+  border: 1px solid #d93954;
+  background-color: white; /* Set background color to cover arrow area */
+}
+
+.fdd option{
+  max-height: 50px;
+  padding: 5px;
+  border: 2px solid black;
+}
+/* Style the hover effect on options */
+.fdd option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style the selected option */
+.fdd option:checked {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+select:focus{
+  outline:none;
+}
+
+
+/* css for upload button */
+
+.upload-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upload-options label{
+  margin-left: 20px;
+}
+.upload-options .ubtn{
+  height: 40px;
+  width: 150px;
+  padding: 5px;
+  color: white;
+  border: none;
+  background-color: #d93954;
+  margin-left: 20px;
+}
+
+.css-b62m3t-container {
+  margin-left: 10px;
+}
+.css-tp3tyd-control {
+  border-radius: 0;
+}
+span.css-1u9des2-indicatorSeparator {
+  display: none;
+}
+svg.css-tj5bde-Svg {
+  color: black;
+}
+
+.hr1 hr{
+  width: auto;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+
+/* YourComponent.css */
+.file-list {
+  margin-top: 20px;
+  border:1px solid #555;
+  height: 500px;
+  padding: 30px;
+}
+
+table {
+  padding: 5px;
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border:  2px solid #e9afb8;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #d93954;;
+  color: #ddd;
+  font-size: 13px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.action-container{
+  height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+.download-icon {
+  color: #d93954; /* Adjust the color as needed */
+  cursor: pointer;
+  
+}
+
+/* Additional styling for checkboxes */
+.checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aca8a8;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Additional styles for specific elements, colors, fonts, etc. can be added here */
+
+/* Sidebar.css */
+.version {
+  font-size: 10px;
+  text-align: center;
+}
+.sidebar {
+  width: 55px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color:#fff  ;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  width: 100px;
+  z-index: 999;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 6px;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+li {
+  padding: 15px;
+  cursor: pointer;
+  /* border-bottom: 1px solid #555; */
+  align-items: center;
+}
+
+li:hover {
+  background-color: #555;
+}
+
+.menu-items {
+  padding-top: 10px;
+}
+/* Add this to your existing CSS or create a new CSS file */
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #d93954; 
+}
+
+.menu-items ul li a.active {
+  background-color: #D93954; /* Set the background color for the active link */
+  
+}
+
+.menu-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-icons .icon {
+  margin-bottom: 10px;
+}
+
+
+
+/* .menu-icons .icon:hover {
+  background: #4caf50;
+} */
+
+.icon.active {
+  background-color: #f88094;
+}
+
+.menu-icons img{
+  color: white;
+}
+
+
+
+canvas.react-pdf__Page__canvas {
+  margin-left: 70px;
+}
+
+
+/* csss for chatpage */
+
+.main-content {
+  display: flex;
+  border-top: 1px solid black;
+}
+.filename{
+  font-size: 20px;
+  font-weight: 500;
+}
+.pdf-viewer {
+  height: auto;
+  flex: 1;
+  padding: 15px;
+  border-radius: 5px;
+  
+}
+.react-pdf__Page {
+  border: 1px solid black;
+}
+/* hide the text details in pdf */
+canvas.react-pdf__Page__canvas {
+  display: block;
+  user-select: none;
+  width: 600px;
+  height: 600px;
+}
+
+.react-pdf__Page__textContent.textLayer {
+  display: none;
+}
+
+.react-pdf__Page__annotations.annotationLayer {
+  display: none;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  border-radius: 5px;
+  height: 400px;
+}
+.cline{
+  height: auto;
+  width: 2px;
+  background-color: black;
+}
+
+.chat-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chat-box li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sender {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.chat-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.chat-box button {
+  padding: 10px 20
+}
+/* Add this to your existing CSS or create a new CSS file */
+
+.addfile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.add-file-button {
+  height: 35px;
+  width: 150px;
+  margin-left: 1100px;
+  background-color: #d93954;
+  border: none;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px; /* Set a max height for the chat box */
+  /* overflow-y: auto; Enable vertical scrollbar when content overflows */
+}
+
+.filename {
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.newchat {
+  /* Your existing styles for .newchat */
+  flex: 1;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+
+
+
+/* SearchBar.css */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  margin: 10px;
+}
+.search-bar input[type="text"] {
+  margin-top: 13px;
+  border: 1px solid rgb(0, 179, 134);
+
+}
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 50px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: -50px;
+  border-radius: 5px;
+}
+
+.pdfview{
+  width:500px;
+  height: auto;
+}
+
+
+/* css for logout */
+
+/* Logout.css */
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logout-container button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  /* Basic checkbox styling */
+  appearance: none;
+  border: 2px solid #ccc;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+
+  /* Custom styling for checked state */
+  &:checked {
+     
+  }
+}
+
+.tickmark-icon{
+    display: block;
+    margin-left: -33px;
+    padding: 10px;
+}
+
+.ubtn:hover{
+    cursor: pointer;
+}
+
+
+/* this css for extract box */
+
+.box1{
+  height: 170px;
+  width: 600px;
+  border: 1px solid black;
+  margin-left: 25%;
+  box-shadow: 1px 2px 3px rgb(168, 167, 167),
+              -1px -2px 3px rgb(168, 167, 167);
+}
+
+.box1 .boxh{
+  height: 50px;
+  width: auto;
+  background-color: #d93954;
+}
+.box1 h3{
+  margin-left: 30px;
+  margin-top: -40px;
+  color: white;
+}
+.box1 .boxd p{
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: 700;
+  color: #555;
+}
+
+.box2{
+  height: 180px;
+  width: 600px;
+  border: 1px solid black;
+  margin-left: 25%;
+  box-shadow: 1px 2px 3px rgb(168, 167, 167),
+              -1px -2px 3px rgb(168, 167, 167);
+}
+
+.box2 .boxh{
+  height: 50px;
+  width: auto;
+  background-color: #d93954;
+}
+.box2 h3{
+  margin-left: 30px;
+  margin-top: -40px;
+  color: white;
+}
+.box2 .boxd p{
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: 700;
+  color: #555;
+}
